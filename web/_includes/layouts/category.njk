@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-category
+---
+<h1>{{ category.title }}</h1>
+<p>{{ category.description }}</p>
+{% for post in category.posts %}
+    <h2><a href="/posts/{{ post.slug }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }} </p>
+{% endfor %}
+
+<p><a href="{{ '/' | url }}">← Home</a></p>

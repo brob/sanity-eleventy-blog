@@ -20,6 +20,9 @@ async function getPosts () {
     publishedAt,
     title,
     slug,
+    mainImage,
+    "excerpt": excerpt[0].children[0].text,
+    "categories": categories[]->{_id,title},
     body[]{
       ...,
       children[]{

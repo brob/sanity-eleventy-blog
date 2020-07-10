@@ -15,6 +15,10 @@ body {
     counter-reset: sidenote-counter;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1 {
     font-weight: 400;
     margin-top: 4rem;
